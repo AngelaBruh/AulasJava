@@ -20,6 +20,13 @@ public class Aula4 {
         final int sorteio = aleatorio.nextInt(0,10);       
         System.out.println("Digite um valor para jogar:");
         int numeroDoUsuario = lendoNumero.nextInt();
+        System.out.println(numeroDoUsuario==sorteio);
+        System.out.println("Digite um valor para jogar:");
+        numeroDoUsuario = lendoNumero.nextInt();
+        System.out.println(numeroDoUsuario==sorteio);
+        System.out.println("Digite um valor para jogar:");
+        numeroDoUsuario = lendoNumero.nextInt();
+        System.out.println(numeroDoUsuario==sorteio);
         System.out.println("Numero aletório: " + sorteio + " - Numero digitado: " + numeroDoUsuario);
         lendoNumero.close();
         
