@@ -24,8 +24,8 @@ public class Exe3Aula4 {
             quantidade[i] = leitor.nextInt();
 
             System.out.println("Informe o valor de "+ nomes[i] + ":");
-            preco[i] = leitor.nextDouble();
-            leitor.nextLine();                                
+            preco[i] = leitor.nextDouble();          
+            leitor.nextLine();
         }       
 
 
@@ -35,13 +35,14 @@ public class Exe3Aula4 {
         } 
 
 
-        for(int m = 0; m < 5; m++){
-            double soma = 0;
+        
+           /*  double soma = 0;
             double mult = 0;
-            mult = quantidade[m] * preco[m];
+            mult = quantidade[i] * preco[i];
+
             soma += mult;  
-            System.out.println("Valor total: " + soma);                    
-        }              
+            System.out.println("Valor total: " + soma);  */               
+                      
         
         leitor.close();
     }
