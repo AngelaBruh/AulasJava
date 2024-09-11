@@ -10,9 +10,36 @@ public class Exe3Aula4 {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
         
+        String[] nomes = new String[5];
+        int[] quantidade = new int[5];
+        double[] preco = new double[5];
+        double valor = 0;
+        double total = 0;
 
+        for (int i =0; i < 5; i++){
+            System.out.println("Informe o nome do produto:");
+            nomes[i] = leitor.nextLine();
+
+            System.out.println("Informe a quantidade de " + nomes[i] + ":");
+            quantidade[i] = leitor.nextInt();
+
+            System.out.println("Informe o valor de "+ nomes[i] + ":");
+            preco[i] = leitor.nextDouble();
+            leitor.nextLine();
+            
+            valor = quantidade[i] * preco[i];                              
+        }        
+        
+        System.out.println("\nProdutos adicionados:");
+        for (String nome : nomes){           
+            System.out.println(nome);
+        }
+        System.out.println("Valor total: " + valor);
+
+
+
+
+        leitor.close();
     }
-
-
 
 }
