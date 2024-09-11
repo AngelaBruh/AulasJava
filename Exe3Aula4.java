@@ -12,11 +12,9 @@ public class Exe3Aula4 {
         
         String[] nomes = new String[5];
         int[] quantidade = new int[5];
-        double[] preco = new double[5];
-
-        double mult = 0;
-        double valor = 0;
-        double total = 0;
+        double[] preco = new double[5];     
+       
+       
 
         for (int i =0; i < 5; i++){
             System.out.println("Informe o nome do produto:");
@@ -27,20 +25,24 @@ public class Exe3Aula4 {
 
             System.out.println("Informe o valor de "+ nomes[i] + ":");
             preco[i] = leitor.nextDouble();
-            leitor.nextLine();
+            leitor.nextLine();                                
+        }       
 
-           // mult = quantidade[i] * preco[i];
-                       
-        }  
-        
-                  
-        
+
         System.out.println("\nProdutos adicionados:");
         for (String nome : nomes){           
             System.out.println(nome);
-        }       
+        } 
 
-        System.out.println("Valor total: ");
+
+        for(int m = 0; m < 5; m++){
+            double soma = 0;
+            double mult = 0;
+            mult = quantidade[m] * preco[m];
+            soma += mult;  
+            System.out.println("Valor total: " + soma);                    
+        }              
+        
         leitor.close();
     }
 }
