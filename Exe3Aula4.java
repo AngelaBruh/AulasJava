@@ -5,7 +5,12 @@
  * 
  */
 
-
+import java.util.Scanner;
 public class Exe3Aula4 {
-    
+    public static void main(String[] args) {
+        
+    }
+
+
+
 }
