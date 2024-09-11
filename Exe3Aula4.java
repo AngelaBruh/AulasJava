@@ -13,6 +13,8 @@ public class Exe3Aula4 {
         String[] nomes = new String[5];
         int[] quantidade = new int[5];
         double[] preco = new double[5];
+
+        double mult = 0;
         double valor = 0;
         double total = 0;
 
@@ -26,20 +28,19 @@ public class Exe3Aula4 {
             System.out.println("Informe o valor de "+ nomes[i] + ":");
             preco[i] = leitor.nextDouble();
             leitor.nextLine();
-            
-            valor = quantidade[i] * preco[i];                              
-        }        
+
+           // mult = quantidade[i] * preco[i];
+                       
+        }  
+        
+                  
         
         System.out.println("\nProdutos adicionados:");
         for (String nome : nomes){           
             System.out.println(nome);
-        }
-        System.out.println("Valor total: " + valor);
+        }       
 
-
-
-
+        System.out.println("Valor total: ");
         leitor.close();
     }
-
 }
