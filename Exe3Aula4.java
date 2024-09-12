@@ -7,12 +7,17 @@
 
 import java.util.Scanner;
 public class Exe3Aula4 {
+    /**
+     * @param args
+     */
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
         
         String[] nomes = new String[5];
         int[] quantidade = new int[5];
         double[] preco = new double[5];     
+        double[] mult = new double[5];
+        
        
        
 
@@ -26,24 +31,23 @@ public class Exe3Aula4 {
             System.out.println("Informe o valor de "+ nomes[i] + ":");
             preco[i] = leitor.nextDouble();          
             leitor.nextLine();
-        }       
 
+            mult[i] = quantidade[i] * preco[i];           
+        }       
 
         System.out.println("\nProdutos adicionados:");
         for (String nome : nomes){           
             System.out.println(nome);
+        }
+        
+        
+        double total =0;
+        for (double mults : mult){
+            
+            total += mults;            
         } 
+        System.out.println("Valor total: " + total);
 
-
-        
-           /*  double soma = 0;
-            double mult = 0;
-            mult = quantidade[i] * preco[i];
-
-            soma += mult;  
-            System.out.println("Valor total: " + soma);  */               
-                      
-        
         leitor.close();
     }
 }
