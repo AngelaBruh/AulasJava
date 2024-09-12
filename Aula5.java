@@ -43,27 +43,7 @@ public class Aula5 {
         }       
 
        
-         /*/Usuario perdeu 10 pontos, possuindo 20
-         if (pontuacao == sorteio) {
-            System.out.println("Você acertou com " + pontuacao + "pontos");
-            leitura.close();
-            return;
-        } else {
-            pontuacao = pontuacao - 10;
-            System.out.println("Você perdeu " + 10 + " pontos e está com " + pontuacao + " pontos"); 
-        }*/
-
-
-         /*/Usuario perdeu 20 pontos, possuindo 10
-         if (pontuacao == sorteio) {
-            System.out.println("Você acertou com " + pontuacao + " pontos");
-            leitura.close();
-            return;
-        } else {
-            pontuacao = pontuacao - 10;
-            System.out.println("Game Over - Você está fora do jogo"); 
-        }*/
-
+        
         
         leitura.close();
     }
