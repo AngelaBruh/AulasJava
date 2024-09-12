@@ -21,7 +21,7 @@ public class Exe3Aula4 {
        
        
 
-        for (int i =0; i < 5; i++){
+        for (int i = 0; i < 5; i++){
             System.out.println("Informe o nome do produto:");
             nomes[i] = leitor.nextLine();
 
@@ -36,15 +36,13 @@ public class Exe3Aula4 {
         }       
 
         System.out.println("\nProdutos adicionados:");
-        for (String nome : nomes){           
+        for (String nome : nomes){           // " nome " - variavel criada dentro do for; " nomes " - variavel criada lá em cima.
             System.out.println(nome);
-        }
+        }        
         
-        
-        double total =0;
-        for (double mults : mult){
-            
-            total += mults;            
+        double total = 0;
+        for (double mults : mult){            
+            total += mults;  // para somar variavel do for.
         } 
         System.out.println("Valor total: " + total);
 
