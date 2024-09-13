@@ -21,7 +21,8 @@
       double nota5 = leitura.nextDouble();      
       double media = ((nota1 + nota2 + nota3 + nota4 + nota5) / 5);
       System.out.println("Media final do aluno(a) " + nomeAluno + ": " + media);
-      leitura.nextLine();
+      leitura.nextLine(); /* Limpe o buffer de acordo com passo anterior, por exemplo com nextLine nesse caso, isso evita o erro de pular 
+      o proximo passo em que o usuario deve nos informar um dado. */
 
       System.out.println("\nInforme o nome do aluno: ");
       String nomeAluno2 = leitura.nextLine();

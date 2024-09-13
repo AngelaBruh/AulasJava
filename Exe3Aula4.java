@@ -30,7 +30,7 @@ public class Exe3Aula4 {
 
             System.out.println("Informe o valor de "+ nomes[i] + ":");
             preco[i] = leitor.nextDouble();          
-            leitor.nextLine();
+            leitor.nextLine(); //limpar buffer do scanner, isso evita que o programa pule o proximo passo.
 
             mult[i] = quantidade[i] * preco[i];           
         }       
