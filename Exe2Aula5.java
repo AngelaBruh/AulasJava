@@ -28,7 +28,7 @@ public class Exe2Aula5 {
             media[i] = soma/5;                       
             if (media[i] >= 6.0) {
                 System.out.println("Aluno(a) " + nomes[i] + ": aprovado.");
-                  leitor.close(); //não coloque, pois fechar o programa e não vai ler o proximo aluno, e ocasionar erro */
+                  leitor.close(); //não coloque, pois fechar o programa e não vai ler o proximo aluno, e ocasionar erro
                   return;
             } else {
                 System.out.println("Aluno(a) " + nomes[i] + ": reprovado.");
