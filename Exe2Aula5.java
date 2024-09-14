@@ -12,27 +12,27 @@ public class Exe2Aula5 {
         double[] notas = new double[5];
         String[] nomes = new String[5];
         double[] media = new double[5];
-        double soma = 0;
+        double soma;
 
         for(int i = 0; i < 5; i++){
+            soma = 0; //reiniciar soma de cada aluno
         System.out.println("Informe o nome do aluno(a): ");
         nomes[i] = leitor.nextLine();
 
             System.out.println("Informe as notas do aluno(a) " + nomes[i] + ":");
             for(int n = 0; n < 5; n++){            
                 notas[i] = leitor.nextDouble();
-                soma += notas[i];
-                media[i] = soma/5;  
-            }   
+                soma += notas[i];                  
+            }
             leitor.nextLine();
-                    
+            
+            media[i] = soma/5;        
             if (media[i] >= 6.0) {
                 System.out.println("Aluno(a) " + nomes[i] + ": aprovado.");
             } else {
                 System.out.println("Aluno(a) " + nomes[i] + ": reprovado.");
             }
-        }
-       
+        }       
         leitor.close();
     }
 }
