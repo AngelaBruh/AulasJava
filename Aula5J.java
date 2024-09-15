@@ -14,6 +14,7 @@ public class Aula5J {
         numero = leitura.nextInt();
 
         //Teste de pontuacao
+        System.out.println("Bem-vindo(a) ao sorteio você tem três chances começando com 30 pontos.");
         if(numero == sorteio){
             System.out.println("Você acertou " + pontuacao + " pontos");
         }else{
@@ -29,11 +30,12 @@ public class Aula5J {
                     System.out.println("Você perdeu 10 pontos e está com " + pontuacao + " pontos");
                     System.out.println("Digite um número:");
                     numero = leitura.nextInt(); 
-                    if(numero == sorteio){
-                     System.out.println("Você acertou com " + pontuacao + " pontos");
-                    }else{
-                        System.out.println("Você perdeu e não possui mais chances!");
-                    }
+
+                        if(numero == sorteio){
+                        System.out.println("Você acertou com " + pontuacao + " pontos");
+                        }else{
+                            System.out.println("Você perdeu e não possui mais chances!");
+                        }
                 }
             
         }    
