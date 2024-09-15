@@ -16,7 +16,7 @@ public class Aula5J {
 
         //Teste de pontuacao
         if(numero == sorteio){
-            System.out.println("Você acertou com" + pontuacao + " pontos");
+            System.out.println("Você acertou com " + pontuacao + " pontos");
         }else{
             pontuacao -= 10;
             System.out.println("Você perdeu 10 pontos e está com " + pontuacao + " pontos");
