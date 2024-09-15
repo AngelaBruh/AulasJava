@@ -9,12 +9,12 @@ public class Aula5J {
         final int sorteio = aleatorio.nextInt(1,6);
         int numero, pontuacao = 30;
        
-        //Obtendo valores do usuario
+        //Obtendo valores do usuario        
+        System.out.println("Bem-vindo(a) ao sorteio você tem três chances começando com 30 pontos.");
         System.out.println("Digite um numero: ");
         numero = leitura.nextInt();
 
         //Teste de pontuacao
-        System.out.println("Bem-vindo(a) ao sorteio você tem três chances começando com 30 pontos.");
         if(numero == sorteio){
             System.out.println("Você acertou " + pontuacao + " pontos");
         }else{
