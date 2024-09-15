@@ -20,17 +20,26 @@ public class Aula5J {
             pontuacao -= 10;
             System.out.println("Você perdeu 10 pontos e está com " + pontuacao + " pontos");
             System.out.println("Digite um número:");
-            numero = leitura.nextInt();
+            numero = leitura.nextInt();        
 
-            if (numero == sorteio) {
-                System.out.println("Você acertou com " + pontuacao + " pontos");
-            } else {
-                pontuacao -= 10;
-                System.out.println("Você perdeu!");
-            }
-        }      
-        
-
+                if (numero == sorteio) {
+                    System.out.println("Você acertou com " + pontuacao + " pontos");
+                } else {
+                    pontuacao -= 10;
+                    System.out.println("Você perdeu 10 pontos e está com " + pontuacao + " pontos");
+                    System.out.println("Digite um número:");
+                    numero = leitura.nextInt(); 
+                    if(numero == sorteio){
+                     System.out.println("Você acertou com " + pontuacao + " pontos");
+                    }else{
+                        System.out.println("Você perdeu e não possui mais chances!");
+                    }
+                }
+            
+        }    
         leitura.close();
+
+
+
     }
 }
