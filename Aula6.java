@@ -20,13 +20,13 @@
                     leitura.close(); //finalizar o programa antes do return
                     return;
                 }
-                
-                
+                leitura.close(); //fecha novamente o programa               
 
 
 
 
-                
+
             }
+            
 
  }
