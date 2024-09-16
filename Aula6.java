@@ -17,9 +17,16 @@
                     System.out.println("Numero digitado é menor que o numero selecionado.");
                 }else{
                     System.out.println("Você acertou com 30 pontos");
-                    return; //finaliza o programa
+                    leitura.close(); //finalizar o programa antes do return
+                    return;
                 }
-                leitura.close();
+                
+                
+
+
+
+
+                
             }
 
  }
