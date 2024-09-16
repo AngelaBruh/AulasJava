@@ -15,8 +15,10 @@ public class Exe3Aula5 {
         if (temp >= 30) {
             System.out.println("Tá calor, beba agua.");
         } else {
-            System.out.println("Tá frio, vá se aquecer.");
+            System.out.println("Tá frio, vá se aquecer.");   
+            leitor.close();         
         }
-        leitor.close();
+        
     }
+    
 }
