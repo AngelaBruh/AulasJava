@@ -25,10 +25,10 @@ public class Exe1Aula6 {
         System.out.println("Informe seu estado: ");
         switch (leitor.nextLine()) {
             case "São Paulo" :
-                System.out.println(cidades[0]);
+                System.out.println("Cidade: " + cidades[0]);
                 break;
             case"Amazonas":
-                System.out.println(cidades[7]);
+                System.out.println("Cidade: " + cidades[7]);
                 break;
             case"Rio Grande Do Sul":
                 System.out.println("Cidade: " + cidades[3]);
