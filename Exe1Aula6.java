@@ -51,7 +51,7 @@ public class Exe1Aula6 {
             case"Parana":
                 System.out.println(cidades[4]);
                 break;
-            case"Rid De Janeiro":
+            case"Rio De Janeiro":
                 System.out.println(cidades[6]);
                 break;              
             default:
