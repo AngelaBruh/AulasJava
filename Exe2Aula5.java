@@ -30,7 +30,7 @@ public class Exe2Aula5 {
             if (media[i] >= 6.0) {
                 System.out.println("Aluno(a) " + nomes[i] + ": aprovado.");
             } else {
-                System.out.println("Aluno(a) " + nomes[i] + ": reprovado.");
+                System.out.println("Aluno(a) " + nomes[i] + ": reprovado.");                  
             }
         }       
         leitor.close();
