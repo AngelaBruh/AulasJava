@@ -17,5 +17,6 @@ public class Exe3Aula5 {
         } else {
             System.out.println("Tá frio, vá se aquecer.");
         }
+        leitor.close();
     }
 }
