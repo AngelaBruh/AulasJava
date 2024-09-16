@@ -31,28 +31,28 @@ public class Exe1Aula6 {
                 System.out.println(cidades[7]);
                 break;
             case"Rio Grande Do Sul":
-                System.out.println(cidades[3]);
+                System.out.println("Cidade: " + cidades[3]);
                 break;
             case"Pernambuco":
-                System.out.println(cidades[2]);
+                System.out.println("Cidade: " + cidades[2]);
                 break;
             case"Ceara":
-                System.out.println(cidades[1]);
+                System.out.println("Cidade: " + cidades[1]);
                 break;
             case"Pará":
-                System.out.println(cidades[8]);
+                System.out.println("Cidade: " + cidades[8]);
                 break;
             case"Minas Gerais":
-                System.out.println(cidades[9]);
+                System.out.println("Cidade: " + cidades[9]);
                 break;
             case"Bahia":
-                System.out.println(cidades[5]);
+                System.out.println("Cidade: " + cidades[5]);
                 break;
             case"Parana":
-                System.out.println(cidades[4]);
+                System.out.println("Cidade: " + cidades[4]);
                 break;
             case"Rio De Janeiro":
-                System.out.println(cidades[6]);
+                System.out.println("Cidade: " + cidades[6]);
                 break;              
             default:
                 System.out.println("Digite um estado valido.");
