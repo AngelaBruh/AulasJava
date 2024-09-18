@@ -1,5 +1,5 @@
 
-
+//Onde fecha cada if, else if e else?
 //Exemplo If encadeado
 
 
