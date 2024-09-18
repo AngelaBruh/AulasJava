@@ -8,7 +8,7 @@ import java.util.Scanner;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Digite a média");
         media = scanner.nextDouble();
-        if (media>6.0) {
+        if (media>=6.0) {
             System.out.println("Aprovado na disciplina");
         }
         scanner.close();

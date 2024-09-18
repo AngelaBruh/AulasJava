@@ -10,11 +10,11 @@
                 int pontuacao = 30;
                 System.out.println("Digite um numero: ");
                 int numero = leitura.nextInt();
-                if(sorteio < numero){
+                if(sorteio <= numero){
                     //pontuacao = pontuacao - 10
                     pontuacao -= 10;
                     System.out.println("Numero digitado é maior que o numero sorteado e você está com " + pontuacao + "pontos");
-                }else if(sorteio > numero){
+                }else if(sorteio >= numero){
                     pontuacao -= 10;
                     System.out.println("Numero digitado é menor que o numero sorteado e você está com " + pontuacao + "pontos");
                 }else{

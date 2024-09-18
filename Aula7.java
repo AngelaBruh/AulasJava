@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.Random;
 public class Aula7{
 
-        public static void main(String[] args) {
+        public static void main(String[] args) { //while - enquanto
             Random aleatorio = new Random();
             Scanner leitura = new Scanner(System.in);
             final int sorteio = aleatorio.nextInt(1,6);
