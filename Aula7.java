@@ -20,8 +20,9 @@ public class Aula7{
                         pontuacao -= 10;
                         System.out.println("Numero digitado é menor que o numero sorteado e você está com " + pontuacao + "pontos");
                     }else{
-                        System.out.println("Você acertou com 30 pontos");                
-                        return;                        
+                        System.out.println("Você acertou com 30 pontos"); 
+                        leitura.close();              
+                        return;                    
                     }
 
             }
