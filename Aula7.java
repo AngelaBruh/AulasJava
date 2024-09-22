@@ -15,10 +15,10 @@ public class Aula7{
                     if(sorteio < numero){
                         //pontuacao = pontuacao - 10
                         pontuacao -= 10;
-                        System.out.println("Numero digitado é maior que o numero sorteado e você está com " + pontuacao + "pontos");
+                        System.out.println("Numero digitado é maior que o numero sorteado e você está com " + pontuacao + " pontos");
                     }else if(sorteio > numero){
                         pontuacao -= 10;
-                        System.out.println("Numero digitado é menor que o numero sorteado e você está com " + pontuacao + "pontos");
+                        System.out.println("Numero digitado é menor que o numero sorteado e você está com " + pontuacao + " pontos");
                     }else{
                         System.out.println("Você acertou com 30 pontos"); 
                         leitura.close();              
