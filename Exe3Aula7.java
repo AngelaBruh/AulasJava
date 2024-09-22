@@ -17,12 +17,12 @@ public class Exe3Aula7 {
     System.out.println("Realizando a conversão de Fahrenheit para Celsius: ");
 
             int f = (temp * (9/5)) + 32;
-            System.out.println(f);
+            System.out.println("Primeira conversão: " + f);
 
     System.out.println("Realizando a conversão de Celsius para Fahrenheit: ");
 
             int c = (f - 32) * (9/5);
-            System.out.println(c);
+            System.out.println("Segunda conversão: " + c);
 
 
 
