@@ -25,6 +25,7 @@ public class Exe8Aula7 {
             System.out.print("Deseja adicionar mais produtos? (s/n): ");
             continuar = leitor.next();
             leitor.nextLine();
+            leitor.close();
         }
 
         System.out.println("O valor total é: R$ " + valorTotal);
