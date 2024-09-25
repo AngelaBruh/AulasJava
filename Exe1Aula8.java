@@ -16,9 +16,11 @@ public class Exe1Aula8 {
 
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
-       // int[] filho;
+        // int[] filho;
         //double[] salar;
         String finalizar = "s";
+        int mediaF;
+        int mediaS;
 
         for (; finalizar.equals("s");) {
             System.out.println("Qual o valor do seu salário atualmente?");
