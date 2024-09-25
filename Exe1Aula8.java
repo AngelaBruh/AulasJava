@@ -16,16 +16,16 @@ public class Exe1Aula8 {
 
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
-        int[] filho;
-        double[] salar;
+       // int[] filho;
+        //double[] salar;
         String finalizar = "s";
 
         for (; finalizar.equals("s");) {
             System.out.println("Qual o valor do seu salário atualmente?");
-            salar = leitor.nextDouble();
+           // salar = leitor.nextDouble();
 
             System.out.println("Quantos filhos você tem? ");
-            filho = leitor.nextLine();
+            //filho = leitor.nextLine();
 
 
 
