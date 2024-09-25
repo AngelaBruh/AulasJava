@@ -16,8 +16,8 @@ public class Exe1Aula8 {
 
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
-        int[] filho = new int[];
-        double[] salar = new double[];
+        int[] filho;
+        double[] salar;
         String finalizar = "s";
 
         for (; finalizar.equals("s");) {
