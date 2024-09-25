@@ -8,5 +8,7 @@ public class Aula9 {
         dados[0][1] = "Morais";
         dados[0][2] = "M";
         dados[0][3] = "21/07/1996";
+
+        
     }
 }
