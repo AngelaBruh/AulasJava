@@ -16,35 +16,40 @@ public class Exe1Aula8 {
 
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
-        String pesquisa = "n";         
+        String pesquisa = "s";
+        double somaS;
+        int somaF;  
+      
         ArrayList<Double> sla = new ArrayList<>();
         ArrayList<Integer> flh = new ArrayList<>(); //aqui não dá para usar o int tradicional.
-       
 
-            
-           /*  for(pesquisa != "s"){
-            System.out.println("Qual o valor do seu salário atualmente?");
-            double salario = leitor.nextDouble();
-            sla.add(salario);
-
-            System.out.println("Quantos filhos você tem? ");
-            int filho = leitor.nextInt();
-            flh.add(filho);
-
-                leitor.nextLine();
-            System.out.println("Deseja encerrar pesquisa? (s/n):");
-            pesquisa = leitor.nextLine();  
-            }*/
-                          
-              
+        ArrayList<Double> mediaS = new ArrayList<>();
+        ArrayList<Integer> mediaF = new ArrayList<>();
+                   
            
-            leitor.close();
+            while(pesquisa.equalsIgnoreCase("s")){
+                System.out.println("Qual o valor do seu salário atualmente?");
+                double salario = leitor.nextDouble();
+                sla.add(salario);
 
+                System.out.println("Quantos filhos você tem? ");
+                int filho = leitor.nextInt();
+                flh.add(filho);    
+                
+                leitor.nextLine();
+                System.out.println("Deseja continuar a pesquisa (s/n):");
+                pesquisa = leitor.nextLine();
+            }   
             
-
-
-          
-        
-       
+            for(double sal: sla){ //somando salarios para media
+                somaS += sal;
+            }
+            for(int fil: flh){ //somando filhos para media
+                somaF += fil;
+            }
+            
+            
+           
+        leitor.close();             
     }
 }
