@@ -17,14 +17,11 @@ public class Exe1Aula8 {
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
         String pesquisa = "s";
-        double somaS;
-        int somaF;  
+        double somaS = 0;
+        int somaF = 0;  
       
         ArrayList<Double> sla = new ArrayList<>();
         ArrayList<Integer> flh = new ArrayList<>(); //aqui não dá para usar o int tradicional.
-
-        ArrayList<Double> mediaS = new ArrayList<>();
-        ArrayList<Integer> mediaF = new ArrayList<>();
                    
            
             while(pesquisa.equalsIgnoreCase("s")){
@@ -48,6 +45,27 @@ public class Exe1Aula8 {
                 somaF += fil;
             }
             
+            double mediaS = somaS / sla.size();
+            System.out.println("Média salarial da população: " + mediaS);
+            double mediaF = somaF / flh.size();
+            System.out.println("Média de filhos da população: " + mediaF);
+            
+            double maiorSalario = sla.get(0); // Inicializa com o primeiro salário da lista
+            for(double sal: sla){
+                if(sal > maiorSalario){
+                    maiorSalario = sal;
+                }
+            }
+            System.out.println("Maior salário informado: " + maiorSalario);
+            
+            int countMenor150 = 0; // aqui estou contando quantos salarios menores que 150 existem
+            for(double sal: sla){
+                if(sal < 150.00){
+                    countMenor150++;
+                }
+            }
+            double percentual = ((double) countMenor150 / sla.size()) * 100; //calculo percentual, o 100 é porcentagem
+            System.out.println("Percentual de pessoas com salário menor que R$ 150,00: " + percentual + "%");
             
            
         leitor.close();             
