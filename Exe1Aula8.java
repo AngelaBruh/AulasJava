@@ -10,33 +10,41 @@
  *  
  */
 
-
+import java.util.ArrayList;
 import java.util.Scanner;
 public class Exe1Aula8 {
 
     public static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
-        // int[] filho;
-        //double[] salar;
-        String finalizar = "s";
-        int mediaF;
-        int mediaS;
+        String pesquisa = "n";         
+        ArrayList<Double> sla = new ArrayList<>();
+        ArrayList<Integer> flh = new ArrayList<>(); //aqui não dá para usar o int tradicional.
+       
 
-        for (; finalizar.equals("s");) {
+            
+           /*  for(pesquisa != "s"){
             System.out.println("Qual o valor do seu salário atualmente?");
-           // salar = leitor.nextDouble();
+            double salario = leitor.nextDouble();
+            sla.add(salario);
 
             System.out.println("Quantos filhos você tem? ");
-            //filho = leitor.nextLine();
+            int filho = leitor.nextInt();
+            flh.add(filho);
 
-
-
-
-
-            System.out.println("Deseja finalizar pesquisa? (s/n): ");
-            finalizar = leitor.next();
+                leitor.nextLine();
+            System.out.println("Deseja encerrar pesquisa? (s/n):");
+            pesquisa = leitor.nextLine();  
+            }*/
+                          
+              
+           
             leitor.close();
-        }
-        leitor.close();
+
+            
+
+
+          
+        
+       
     }
 }
