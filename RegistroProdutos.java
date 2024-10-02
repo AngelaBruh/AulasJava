@@ -9,7 +9,7 @@ public class RegistroProdutos {
             public void cal(){
                 System.out.println("\nProdutos adicionados:");
                 for (String nomes : nome) {
-                    System.out.println(nome);
+                    System.out.println(nomes);
                 }
 
                 double total = 0;                
@@ -27,7 +27,7 @@ public class RegistroProdutos {
             Scanner leitor = new Scanner(System.in);
             for (int i = 0; i < 10; i++) {               
     
-                while(true){
+                
                         try{
                         System.out.println("Informe o nome do produto:");
                         nome[i] = leitor.nextLine();
@@ -39,12 +39,12 @@ public class RegistroProdutos {
                         preco[i] = leitor.nextDouble();          
                         leitor.nextLine();
                     }
-                    catch(Exception e){
+                        catch(Exception e){
                         System.out.println("Digite um valor valido.");
-                    }
+                        }
                     mult[i] = qtd[i] * preco[i];     
                     leitor.nextLine();               
-                }                 
+                                
             }
             leitor.close();               
             
