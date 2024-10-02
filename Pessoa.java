@@ -24,9 +24,9 @@ public class Pessoa {
 
         while(true){
             try{
-                Scanner id = new Scanner(System.in);
+                Scanner ide = new Scanner(System.in);
                 System.out.println("Informe sua idade: ");
-                this.idade = id.nextInt();
+                this.idade = ide.nextInt();
                 break;
             }
             catch(Exception e){
