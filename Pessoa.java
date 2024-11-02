@@ -15,9 +15,9 @@ public class Pessoa {
     
     public Pessoa(){
         Scanner leitor = new Scanner (System.in);
-        System.out.println("Digte seu nome: ");
+        System.out.println("Digite seu nome: ");
         this.nome = leitor.nextLine();
-        System.out.println("Digte seu sobrenome: ");
+        System.out.println("Digite seu sobrenome: ");
         this.sobrenome = leitor.nextLine();
         System.out.println("Informe o sexo -- (M para masculino / F para feminino): ");
         this.sexo = leitor.nextLine();
